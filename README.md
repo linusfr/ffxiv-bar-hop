@@ -1,10 +1,25 @@
 # Bar Hop
 
-Steps through cross hotbar sets relative to the one you are on.
+[![ci](https://img.shields.io/github/actions/workflow/status/linusfr/ffxiv-bar-hop/ci.yml?branch=main&label=ci&cacheSeconds=300)](https://github.com/linusfr/ffxiv-bar-hop/actions/workflows/ci.yml)
+[![release](https://img.shields.io/github/v/release/linusfr/ffxiv-bar-hop?label=release&cacheSeconds=300)](https://github.com/linusfr/ffxiv-bar-hop/releases/latest)
+[![licence](https://img.shields.io/github/license/linusfr/ffxiv-bar-hop?color=blue)](LICENSE)
+
+> Cycle up two, not up one.
 
 The game switches to a set by number, or one at a time with
 `/chotbar change next`. Neither steps by two: a macro would have to know which
 set it started on. Bar Hop reads that off the bar and does the arithmetic.
+
+## Install
+
+Add to Dalamud's custom plugin repositories (`/xlsettings` → Experimental):
+
+```text
+https://raw.githubusercontent.com/linusfr/ffxiv-bar-hop/main/pluginmaster.json
+```
+
+Then put `/barhop up 2` in a game macro and drop it on a slot — that is the
+whole setup.
 
 ## Commands
 
