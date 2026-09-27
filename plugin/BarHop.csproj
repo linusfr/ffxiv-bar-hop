@@ -1,0 +1,28 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <!-- Overridden by CI: dotnet build -p:Version=$(semantic-release output) -->
+    <Version Condition="'$(Version)' == ''">1.0.0</Version>
+    <AssemblyName>BarHop</AssemblyName>
+    <RootNamespace>BarHop</RootNamespace>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <!-- Reading the cross hotbar is pointer work against FFXIVClientStructs. -->
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Author>linusfr</Author>
+    <Name>Bar Hop</Name>
+    <Punchline>Step through cross hotbar sets by any number, not just one.</Punchline>
+    <Description>The game can switch to a named cross hotbar set, and a macro can only name one. This steps relative to wherever you are — up two, down two, or any step you like — so a controller's d-pad can walk the sets without knowing which one it is on.</Description>
+    <ApplicableVersion>any</ApplicableVersion>
+    <DalamudApiLevel>15</DalamudApiLevel>
+    <Tags>hotbar;crosshotbar;controller;utility</Tags>
+    <RepoUrl>https://github.com/linusfr/ffxiv-bar-hop</RepoUrl>
+    <IconUrl>https://raw.githubusercontent.com/linusfr/ffxiv-bar-hop/main/images/icon.png</IconUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\images\icon.png" Link="images\icon.png"
+             CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

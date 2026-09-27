@@ -1,0 +1,24 @@
+[
+  {
+    "Author": "linusfr",
+    "Name": "Bar Hop",
+    "InternalName": "BarHop",
+    "Punchline": "Step through cross hotbar sets by any number, not just one.",
+    "Description": "The game can only switch to a cross hotbar set by name, so a macro cannot say \u201cgo up two\u201d. This steps relative to whichever set you are on \u2014 up, down, by any amount, wrapping at the ends \u2014 so two keys or two buttons can walk all eight sets.",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "Tags": [
+      "hotbar",
+      "crosshotbar",
+      "controller",
+      "utility"
+    ],
+    "AssemblyVersion": "1.0.0.0",
+    "RepoUrl": "https://github.com/linusfr/ffxiv-bar-hop",
+    "DownloadLinkInstall": "https://github.com/linusfr/ffxiv-bar-hop/releases/latest/download/BarHop.zip",
+    "DownloadLinkUpdate": "https://github.com/linusfr/ffxiv-bar-hop/releases/latest/download/BarHop.zip",
+    "DownloadLinkTesting": "https://github.com/linusfr/ffxiv-bar-hop/releases/latest/download/BarHop.zip",
+    "LastUpdated": 1790530634,
+    "IconUrl": "https://raw.githubusercontent.com/linusfr/ffxiv-bar-hop/main/images/icon.png"
+  }
+]
