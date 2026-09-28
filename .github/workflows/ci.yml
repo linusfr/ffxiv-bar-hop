@@ -114,8 +114,8 @@ jobs:
           files: BarHop.zip
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # The two halves ship from one tag, so the image version and the plugin
-      # version are the same number and there is no compatibility matrix.
+      # The repo's manifest points at "latest", so it only needs the version
+      # bumping for Dalamud to notice an update exists.
       - name: Point pluginmaster at the new release
         env:
           VERSION: ${{ needs.checks.outputs.version }}
